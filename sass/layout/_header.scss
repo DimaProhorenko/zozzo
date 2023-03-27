@@ -1,0 +1,49 @@
+@use '../abstracts/' as abs;
+
+.header {
+    padding-block: 2em;
+    position: relative;
+    z-index: 1000;
+
+    &__content {
+        @include abs.flex();
+    }
+
+    &__nav {
+        @include abs.absolute(top 0 left 0);
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(90deg, abs.$clr-primary, abs.$clr-secondary);
+        background-size: 200%;
+        background-position: 100%;
+        @include abs.flex-center;
+        text-align: center;
+        z-index: -1;
+        color: abs.$clr-text2;
+        text-align: center;
+        animation: nav-bg 3000ms linear infinite alternate;
+        translate: 100% 0;
+        transition: translate abs.$duration abs.$timing;
+
+        &--open {
+            translate: 0;
+        }
+    }
+
+    &__list > * + * {
+        margin-block-start: 1em;
+    }  
+
+    &__link {
+        font-family: abs.$ff-headings;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: capitalize;
+    }
+}
+
+@keyframes nav-bg {
+    to {
+        background-position: 0 0;
+    }
+}

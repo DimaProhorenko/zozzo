@@ -1,0 +1,14 @@
+@use '../abstracts/' as abs;
+
+.wrapper {
+    width: 90%;
+    max-width: abs.$max-width;
+    margin-inline: auto;
+}
+
+.card {
+    padding: .5em 1em;
+    background-color: abs.$clr-bg2;
+    box-shadow: abs.$box-shadow;
+    border-radius: 2em;
+}

@@ -1,0 +1,68 @@
+@use '../abstracts/' as abs;
+
+.burger {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: abs.toRem(50);
+    height: abs.toRem(35);
+    @include abs.flex-col-center;
+    padding-block: 0;
+    padding-inline: 15px;
+    gap: 3px;
+
+    &--open {
+        .burger__line {
+
+            &--top,
+            &--bot {
+              scale: 1;
+              transition: translate abs.$duration abs.$timing abs.$duration, scale abs.$duration abs.$timing;
+            }
+
+            &--top {
+                translate: 0 calc(100% + 3px);
+            }
+
+            &--mid {
+                scale: 0 1;
+            }
+
+            &--bot {
+                translate: 0 calc(-100% - 3px);
+            }
+        }
+    }
+
+    &__line {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: abs.$clr-secondary;
+        transform-origin: center left;
+        position: relative;
+
+        &--top,
+        &--bot {
+            scale: .5 1;
+            transition: translate abs.$duration abs.$timing, scale abs.$duration abs.$timing abs.$duration;
+        }
+
+        &--top {
+            align-self: flex-start;
+        }
+
+        &--mid {
+            scale: 1;
+            transform-origin: center;
+            transition: scale abs.$duration abs.$timing;
+        }
+
+        &--bot {
+            transform-origin: center right;
+            align-self: flex-end;
+        }
+
+        
+    }
+}

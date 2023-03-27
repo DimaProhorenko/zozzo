@@ -1,0 +1,27 @@
+@use './functions' as f;
+
+$clr-primary: #9900e5;
+$clr-secondary: #00204c;
+$clr-bg: #eaf2ff;
+$clr-bg2: #fff;
+$clr-text: #00204c;
+$clr-text2: #fff;
+$clr-text3: #aaaaaa;
+$clr-card-border: #eaf2ff;
+$clr-shadow: rgba(167,0,250,0.1);
+
+$box-shadow: 6px 8px 10px 0 $clr-shadow;
+
+$ff-regular: 'Ubuntu', Arial, sans-serif;
+$ff-headings: 'Xyber';
+
+$max-width: f.toRem(1220);
+
+//bp
+$bp-phone: f.toRem(599);
+$bp-tablet: f.toRem(720);
+$bp-desktop: f.toRem(1000);
+
+// Transitions
+$duration: 300ms;
+$timing: ease-in-out;

@@ -1,0 +1,24 @@
+@use '../abstracts/' as abs;
+
+.logo {
+    padding: .5em 1em;
+    background-color: abs.$clr-bg2;
+    box-shadow: abs.$box-shadow;
+    border-radius: 2em;
+
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        width: abs.toRem(30);
+    }
+    &__name {
+        font-size: 1rem;
+        letter-spacing: 1px;
+        margin-inline-start: .5em;
+        font-weight: 900;
+    }
+}
