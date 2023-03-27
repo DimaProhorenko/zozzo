@@ -1,0 +1,40 @@
+@use '../abstracts/' as abs;
+
+.hero {
+    padding-block: 10em;
+    text-align: center;
+    position: relative;
+
+    &__content {
+        @include abs.flex-col-center;
+        position: relative;
+    }
+
+    &__sticker {
+        width: abs.toRem(100);
+        z-index: -1;
+
+        @include abs.for-tablet-up {
+            width: 100%;
+            max-width: abs.toRem(150);
+        }
+
+        &--donut {
+            @include abs.absolute(top -10% right 0);
+
+            @include abs.for-tablet-up {
+                top: 0;
+            }
+        }
+
+        &--plus {
+            @include abs.absolute(bottom -50% left 0);
+
+            @include abs.for-tablet-up {
+                bottom: auto;
+                top: -15%;
+                left: 5%;
+            }
+        }
+    }
+}

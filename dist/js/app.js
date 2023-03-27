@@ -6,3 +6,5 @@ burgerEl.addEventListener('click', () => {
     burgerEl.classList.toggle('burger--open');
     navEl.classList.toggle('header__nav--open');
 })
+
+AOS.init();

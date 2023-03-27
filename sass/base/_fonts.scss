@@ -1,13 +1,18 @@
 @font-face {
-    font-family: 'Xyber';
-    font-weight: 700 900;
-    src: url('../assets/fonts/XYBER - Bold.otf');
+    font-family: 'Alkatra';
+    font-weight: 600 900;
+    src: url('../assets/fonts/Alkatra/Alkatra-SemiBold.ttf'),
+         url('../assets/fonts/Alkatra/Alkatra-Bold.ttf'),
+         url('../assets/fonts/Alkatra/Alkatra-ExtraBold.ttf');
 }
 
 @font-face {
-    font-family: 'Ubuntu';
-    font-weight: 300 500;
-    src: url('../assets/fonts/Ubuntu-Light.ttf'),
-         url('../assets/fonts/Ubuntu-Regular.ttf'),
-         url('../assets/fonts/Ubuntu-Medium.ttf');
+    font-family: 'Poppins';
+    font-weight: 300 900;
+    src: url('../assets/fonts/Poppins/Poppins-light.ttf'),
+         url('../assets/fonts/Poppins/Poppins-Regular.ttf'),
+         url('../assets/fonts/Poppins/Poppins-Medium.ttf'),
+         url('../assets/fonts/Poppins/Poppins-SemiBold.ttf'),
+         url('../assets/fonts/Poppins/Poppins-Bold.ttf'),
+         url('../assets/fonts/Poppins/Poppins-ExtraBold.ttf');
 }

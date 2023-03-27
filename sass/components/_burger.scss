@@ -11,6 +11,10 @@
     padding-inline: 15px;
     gap: 3px;
 
+    @include abs.for-tablet-up {
+        display: none;
+    }
+
     &--open {
         .burger__line {
 
