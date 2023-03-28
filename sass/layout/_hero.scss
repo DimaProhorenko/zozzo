@@ -1,11 +1,12 @@
 @use '../abstracts/' as abs;
 
 .hero {
-    padding-block: 10em;
+    padding-block: 4em;
     text-align: center;
     position: relative;
 
     &__content {
+        padding-block: 4em;
         @include abs.flex-col-center;
         position: relative;
     }

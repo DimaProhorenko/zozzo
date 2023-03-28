@@ -8,3 +8,7 @@ burgerEl.addEventListener('click', () => {
 })
 
 AOS.init();
+const rellax = new Rellax('.rellax', {
+    horizontal: true,
+    breakpoints: [1000]
+})

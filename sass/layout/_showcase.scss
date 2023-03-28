@@ -1,0 +1,35 @@
+@use '../abstracts/' as abs;
+
+.showcase {
+
+    &__item {
+        padding-block: 1em;
+        border-radius: 1em;
+        @include abs.flex;
+        gap: 2em;
+
+        @include abs.for-desktop-up {
+            max-width: abs.toRem(250);
+        }
+
+        &--float {
+            @include abs.for-desktop-up {
+                @include abs.absolute(top 4rem left 50%);
+                translate: -50% 0;
+            }
+        }
+    }
+
+    &__img {
+        border-radius: 1em;
+        width: 30%;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    &__tag {
+        font-size: 1.1rem;
+    }
+}

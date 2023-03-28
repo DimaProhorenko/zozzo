@@ -1,0 +1,12 @@
+@use '../abstracts/' as abs;
+
+.scrolling {
+    overflow: hidden;
+    padding: 0;
+
+    &__img {
+        width: 150%;
+        max-width: initial;
+        // max-width: abs.toRem(900);
+    }
+}
